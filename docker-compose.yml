@@ -13,4 +13,5 @@ services:
             - ~/loadrc/:/root/loadrc/
             - ~/.ssh/:/root/.ssh/
             - ~/loadrc/gitrc/.gitconfig:/root/.gitconfig
-        command: /bin/sh -c "/entrypoint.sh > /var/logs/containner.log 2>&1"
+        environment:
+            - FILENAME="~/.bashrc"
