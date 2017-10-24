@@ -1,0 +1,17 @@
+version: '2.1'
+
+services:
+    dbuntu:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: huangyingw/dvim
+        volumes:
+            - ./.bashrc:/root/.bashrc
+            - ./var/logs/:/var/logs/
+            - ~/.m2/:/root/.m2/
+            - ~/loadrc/:/root/loadrc/
+            - ~/.ssh/:/root/.ssh/
+            - ~/loadrc/gitrc/.gitconfig:/root/.gitconfig
+        environment:
+            - FILENAME="~/.bashrc"
