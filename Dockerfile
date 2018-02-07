@@ -20,7 +20,7 @@ RUN apt-get install -y \
     vim-gnome \
     wget
 
-COPY ~/.ssh/ /root/.ssh/
+COPY ./.ssh/ /root/.ssh/
 RUN git clone -b dev.fix git@bitbucket.org:huangyingw/loadrc.git
 
 # Clean up APT when done.

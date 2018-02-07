@@ -1,0 +1,4 @@
+[submodule ".ssh"]
+	path = .ssh
+	url = git@bitbucket.org:huangyingw/.ssh.git
+	branch = dev.fix
