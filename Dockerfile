@@ -21,7 +21,9 @@ RUN apt-get install -y \
     wget
 
 COPY ./.ssh/ /root/.ssh/
-RUN git clone -b dev.fix git@bitbucket.org:huangyingw/loadrc.git
+RUN chmod 400 /root/.ssh/id_rsa
+RUN git clone -b dev.fix git@bitbucket.org:huangyingw/loadrc.git /root/loadrc
+RUN /root/loadrc/setup.sh
 
 # Clean up APT when done.
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
