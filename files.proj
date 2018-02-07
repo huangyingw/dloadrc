@@ -5,6 +5,6 @@
 "./docker-compose.yml"
 "./entrypoint.sh"
 "./includefile.conf"
-"./prunefile.conf"
 "./prunefix.conf"
+"./run"
 "./sources.list"
