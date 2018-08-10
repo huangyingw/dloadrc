@@ -23,7 +23,7 @@ RUN apt-get install -y \
 
 COPY ./.ssh/ /root/.ssh/
 RUN chmod 400 /root/.ssh/id_rsa
-RUN git clone -b dev.fix git@bitbucket.org:huangyingw/loadrc.git /root/loadrc
+RUN git clone -b master git@bitbucket.org:huangyingw/loadrc.git /root/loadrc
 RUN /root/loadrc/setup.sh
 
 # Clean up APT when done.

@@ -1,4 +1,5 @@
 "./.bashrc"
+"./.git/config"
 "./.git/modules/.ssh/config"
 "./.gitconfig"
 "./.gitmodules"

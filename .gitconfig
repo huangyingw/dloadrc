@@ -4,4 +4,10 @@
     remote = origin
     branch = master
 [commit]
-	message = n
+    message = n
+[remote "origin"]
+    url = git@github.com:huangyingw/dloadrc.git
+    fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+    remote = origin
+    merge = refs/heads/master
