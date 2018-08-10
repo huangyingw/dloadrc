@@ -24,6 +24,7 @@ RUN apt-get install -y \
 COPY ./.ssh/ /root/.ssh/
 RUN chmod 400 /root/.ssh/id_rsa
 RUN git clone -b master git@bitbucket.org:huangyingw/loadrc.git /root/loadrc
+WORKDIR /root/loadrc
 RUN git submodule init \
         ; git submodule sync \
         ; git submodule update
