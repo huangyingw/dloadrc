@@ -1,11 +1,11 @@
 version: '2.1'
 
 services:
-    dbuntu:
+    dloadrc:
         build:
             context: .
             dockerfile: Dockerfile
-        image: huangyingw/dvim
+        image: huangyingw/dloadrc
         volumes:
             - ./var/logs/:/var/logs/
         environment:
