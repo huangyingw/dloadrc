@@ -16,3 +16,6 @@
 [branch "ubuntu/18.04"]
     remote = origin
     merge = refs/heads/ubuntu/18.04
+[deploy]
+    host = mini
+    path = ~/myproject/git/docker/huangyingw/dloadrc/
