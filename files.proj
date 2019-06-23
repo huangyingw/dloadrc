@@ -12,4 +12,5 @@
 "./prunefile.conf"
 "./prunefix.conf"
 "./run"
+"./setup.cfg"
 "./sources.list"
