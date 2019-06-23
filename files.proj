@@ -2,6 +2,7 @@
 "./.git/config"
 "./.git/modules/.ssh/config"
 "./.gitconfig"
+"./.gitignore"
 "./.gitmodules"
 "./.ssh/.gitconfig"
 "./Dockerfile"
